@@ -3,265 +3,255 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+  }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#000;
-}
+  .wrapper {
+    margin: auto;
+    background: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
 
-.wrapper{
-   
-    margin:auto;
-    background:url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
-    position:relative;
-    overflow:hidden;
-}
+  .overlay {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 25px 18px 40px;
+  }
 
-.overlay{
-    background:rgba(0,0,0,0.65);
-    padding:25px 18px 40px;
-}
+  .title {
+    text-align: center;
+    color: #ffe600;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 18px;
+    text-shadow: 0 0 12px #ff0000;
+  }
 
-.title{
-    text-align:center;
-    color:#ffe600;
-    font-size:34px;
-    font-weight:800;
-    line-height:1.3;
-    margin-bottom:18px;
-    text-shadow:0 0 12px #ff0000;
-}
+  .subtitle {
+    text-align: center;
+    color: #ff3b3b;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
 
-.subtitle{
-    text-align:center;
-    color:#ff3b3b;
-    font-size:19px;
-    font-weight:700;
-    line-height:1.7;
-    margin-bottom:28px;
-}
+  .whatsapp-box {
+    text-align: center;
+    margin: 35px 0;
+  }
 
-.whatsapp-box{
-    text-align:center;
-    margin:35px 0;
-}
+  .whatsapp-circle {
+    width: 120px;
+    height: 120px;
+    background: #00d63b;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+    box-shadow: 0 0 25px #00ff66;
+    animation: pulse 1.5s infinite;
+  }
 
-.whatsapp-circle{
-    width:120px;
-    height:120px;
-    background:#00d63b;
-    border-radius:50%;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:60px;
-    color:white;
-    box-shadow:0 0 25px #00ff66;
-    animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-
-    0%{
-        transform:scale(1);
-        box-shadow:0 0 10px #00ff66;
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px #00ff66;
     }
 
-    50%{
-        transform:scale(1.1);
-        box-shadow:0 0 35px #00ff66;
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 35px #00ff66;
     }
 
-    100%{
-        transform:scale(1);
-        box-shadow:0 0 10px #00ff66;
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px #00ff66;
     }
-}
+  }
 
-.info-box{
-    background:white;
-    border-radius:10px;
-    padding:22px;
-    margin:22px 0;
-    text-align:center;
-    color:#0033ff;
-    font-size:17px;
-    font-style:italic;
-    line-height:1.7;
-}
+  .info-box {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 22px 0;
+    text-align: center;
+    color: #0033ff;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.7;
+  }
 
-.warning{
-    text-align:center;
-    color:#ffd000;
-    font-size:14px;
-    line-height:1.8;
-    font-weight:700;
-    margin:28px 0;
-}
+  .warning {
+    text-align: center;
+    color: #ffd000;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 700;
+    margin: 28px 0;
+  }
 
-.icons{
-    text-align:center;
-    margin:18px 0;
-    font-size:18px;
-}
+  .icons {
+    text-align: center;
+    margin: 18px 0;
+    font-size: 18px;
+  }
 
-.btn{
-    display:block;
-    width:100%;
-    max-width:420px;
-    margin:20px auto;
-    text-align:center;
-    text-decoration:none;
-    padding:20px;
-    border-radius:50px;
-    font-size:24px;
-    font-weight:700;
-    transition:0.3s;
-}
+  .btn {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.3s;
+  }
 
-.orange-btn{
-    background:linear-gradient(180deg,#ffcc33,#ff8800);
-    color:white;
-    box-shadow:0 0 25px rgba(255,153,0,0.8);
-    animation:moveButton 1.2s infinite;
-}
+  .orange-btn {
+    background: linear-gradient(180deg, #ffcc33, #ff8800);
+    color: white;
+    box-shadow: 0 0 25px rgba(255, 153, 0, 0.8);
+    animation: moveButton 1.2s infinite;
+  }
 
-.orange-btn:hover{
-    transform:scale(1.05);
-}
+  .orange-btn:hover {
+    transform: scale(1.05);
+  }
 
-@keyframes moveButton{
-
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-6px);
+  @keyframes moveButton {
+    0% {
+      transform: translateY(0);
     }
 
-    100%{
-        transform:translateY(0);
-    }
-}
-
-.red-text{
-    text-align:center;
-    color:#ff2d2d;
-    font-size:22px;
-    font-weight:800;
-    margin:35px 0;
-    text-shadow:0 0 10px red;
-}
-
-.progress{
-    width:220px;
-    height:18px;
-    border:3px solid #ff0066;
-    border-radius:40px;
-    margin:25px auto;
-    overflow:hidden;
-}
-
-.progress-bar{
-    width:70%;
-    height:100%;
-    background:linear-gradient(90deg,#ffffff,#ff0066);
-    animation:loading 2s infinite;
-}
-
-@keyframes loading{
-
-    0%{
-        width:10%;
+    50% {
+      transform: translateY(-6px);
     }
 
-    50%{
-        width:75%;
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .red-text {
+    text-align: center;
+    color: #ff2d2d;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 35px 0;
+    text-shadow: 0 0 10px red;
+  }
+
+  .progress {
+    width: 220px;
+    height: 18px;
+    border: 3px solid #ff0066;
+    border-radius: 40px;
+    margin: 25px auto;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffffff, #ff0066);
+    animation: loading 2s infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      width: 10%;
     }
 
-    100%{
-        width:10%;
-    }
-}
-
-.telegram-image{
-    text-align:center;
-    margin:35px 0 20px;
-}
-
-.telegram-image img{
-    width:100%;
-    max-width:420px;
-    border-radius:18px;
-    box-shadow:0 0 25px rgba(255,0,128,0.7);
-    border:3px solid #ff0080;
-}
-
-.blue-btn{
-    background:#149dff;
-    color:white;
-    border:3px solid white;
-    font-size:22px;
-}
-
-.blue-btn:hover{
-    background:#0080ff;
-    transform:scale(1.03);
-}
-
-@media(max-width:600px){
-
-    .title{
-        font-size:28px;
+    50% {
+      width: 75%;
     }
 
-    .subtitle{
-        font-size:16px;
+    100% {
+      width: 10%;
+    }
+  }
+
+  .telegram-image {
+    text-align: center;
+    margin: 35px 0 20px;
+  }
+
+  .telegram-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(255, 0, 128, 0.7);
+    border: 3px solid #ff0080;
+  }
+
+  .blue-btn {
+    background: #149dff;
+    color: white;
+    border: 3px solid white;
+    font-size: 22px;
+  }
+
+  .blue-btn:hover {
+    background: #0080ff;
+    transform: scale(1.03);
+  }
+
+  @media(max-width:600px) {
+    .title {
+      font-size: 28px;
     }
 
-    .btn{
-        font-size:19px;
-        padding:18px;
+    .subtitle {
+      font-size: 16px;
     }
 
-    .red-text{
-        font-size:18px;
+    .btn {
+      font-size: 19px;
+      padding: 18px;
     }
 
-}
-
+    .red-text {
+      font-size: 18px;
+    }
+  }
 </style>
-
-
 
 <div class="wrapper">
 
-    <div class="overlay">
+  <div class="overlay">
 
-        <div class="title">
-            🔥 Hier findest du die besten WhatsApp-Gruppen für Erwachsene in Deutschland 🔥
-        </div>
+    <div class="title">
+      🔥 Hier findest du die besten WhatsApp-Gruppen für Erwachsene in Deutschland 🔥
+    </div>
 
-        <div class="subtitle">
-            Neue Mitgliedsanfragen werden blockiert, bis dein Alter bestätigt wurde.<br><br>
+    <div class="subtitle">
+      Neue Mitgliedsanfragen werden blockiert, bis dein Alter bestätigt wurde.<br><br>
 
-            Der Zugriff auf den Chat wird für neue Mitglieder gesperrt, bis bestätigt wird, dass sie volljährig sind.<br><br>
+      Der Zugriff auf den Chat wird für neue Mitglieder gesperrt, bis bestätigt wird, dass sie volljährig sind.<br><br>
 
-            Nach der Verifizierung wird deine Anfrage automatisch genehmigt.
-        </div>
+      Nach der Verifizierung wird deine Anfrage automatisch genehmigt.
+    </div>
 
-        <div class="whatsapp-box">
+    <div class="whatsapp-box">
 
-            <div class="whatsapp-circle">
-    <img src="https://cibersec.iescampanillas.com/wp-content/uploads/2021/05/logowhapa.png" alt="WhatsApp" style="width:140px;
+      <div class="whatsapp-circle">
+        <img src="https://cibersec.iescampanillas.com/wp-content/uploads/2021/05/logowhapa.png" alt="WhatsApp" style="width:140px;
             height:140px;
             object-fit:contain;
             border-radius:50%;
@@ -270,67 +260,67 @@ body{
             box-shadow:0 0 30px rgba(0,255,100,0.9);
             border:4px solid #ffffff;
             animation:pulse 1.5s infinite;">
-            </div>
-
-        </div>
-
-        <div class="info-box">
-            👋 Ein herzliches Willkommen an unsere Mitglieder! 👋
-        </div>
-
-        <div class="info-box">
-            Um weiterhin Teil unserer exklusiven Gruppe zu sein, registriere dich bitte auf unserer Webseite und bestätige dein Alter.
-        </div>
-
-        <div class="info-box">
-            ❗ Wichtig! Bestätige dein Konto mit deiner E-Mail-Adresse.
-        </div>
-
-        <div class="warning">
-            Diese kleine Überprüfung stellt sicher, dass nur Erwachsene Zugang zu unseren spannenden Gruppen erhalten 😈<br><br>
-
-            🔥 Klicke hier, um dein Alter zu bestätigen. Wir warten auf dich... 💋
-        </div>
-
-        <div class="icons">
-            📘 📱 💬 📸 🎥 🔥
-        </div>
-
-        <!-- BOTÓN -->
-        <a href="https://clicknlook.site/a/v2yG2tAol8IADN3" class="btn orange-btn">
-            Ich bin über 21 Jahre alt
-        </a>
-
-        <div class="red-text">
-            Während deine Anfrage überprüft wird... entdecke echte Singles in deiner Nähe 🔥
-        </div>
-
-        <!-- BOTÓN -->
-        <a href="https://clicknlook.site/a/v2yG2tAol8IADN3" class="btn orange-btn">
-            Frauen in meiner Nähe ansehen
-        </a>
-
-        <div class="progress">
-            <div class="progress-bar"></div>
-        </div>
-
-        <!-- IMAGEN ARRIBA DE TELEGRAM -->
-        <div class="telegram-image">
-
-            <img src="https://citascasuales.net/images/pic01.jpg" alt="Singles">
-
-        </div>
-
-        <!-- BOTÓN TELEGRAM -->
-        <a href="https://t.me/+pxywREwn0ZYwMDhh" class="btn blue-btn">
-            Telegram Gruppe
-        </a>
-
-        <!-- BOTÓN TELEGRAM -->
-        <a href="https://t.me/WebCamDE" class="btn blue-btn">
-            Telegram Kanal
-        </a>
+      </div>
 
     </div>
+
+    <div class="info-box">
+      👋 Ein herzliches Willkommen an unsere Mitglieder! 👋
+    </div>
+
+    <div class="info-box">
+      Um weiterhin Teil unserer exklusiven Gruppe zu sein, registriere dich bitte auf unserer Webseite und bestätige dein Alter.
+    </div>
+
+    <div class="info-box">
+      ❗ Wichtig! Bestätige dein Konto mit deiner E-Mail-Adresse.
+    </div>
+
+    <div class="warning">
+      Diese kleine Überprüfung stellt sicher, dass nur Erwachsene Zugang zu unseren spannenden Gruppen erhalten 😈<br><br>
+
+      🔥 Klicke hier, um dein Alter zu bestätigen. Wir warten auf dich... 💋
+    </div>
+
+    <div class="icons">
+      📘 📱 💬 📸 🎥 🔥
+    </div>
+
+    <!-- BOTÓN -->
+    <a href="https://analise.click/a/0RNGRC2gKKtOBJp" class="btn orange-btn">
+      Ich bin über 21 Jahre alt
+    </a>
+
+    <div class="red-text">
+      Während deine Anfrage überprüft wird... entdecke echte Singles in deiner Nähe 🔥
+    </div>
+
+    <!-- BOTÓN -->
+    <a href="https://analise.click/a/0RNGRC2gKKtOBJp" class="btn orange-btn">
+      Frauen in meiner Nähe ansehen
+    </a>
+
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- IMAGEN ARRIBA DE TELEGRAM -->
+    <div class="telegram-image">
+
+      <img src="https://citascasuales.net/images/pic01.jpg" alt="Singles">
+
+    </div>
+
+    <!-- BOTÓN TELEGRAM -->
+    <a href="https://t.me/+pxywREwn0ZYwMDhh" class="btn blue-btn">
+      Telegram Gruppe
+    </a>
+
+    <!-- BOTÓN TELEGRAM -->
+    <a href="https://t.me/WebCamDE" class="btn blue-btn">
+      Telegram Kanal
+    </a>
+
+  </div>
 
 </div>
